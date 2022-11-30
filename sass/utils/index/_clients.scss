@@ -1,0 +1,104 @@
+.our_clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+
+.clients-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: $font-weight-title;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    @media screen and (min-width: $desktop) {
+           margin-bottom: 50px;
+        }
+}
+
+.clients {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+    @media screen and (min-width: $desktop) {
+            display: flex;
+    }
+}
+
+.clients-list {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid $color-hover__back;
+        border-radius: 4px;
+    }
+
+        @media screen and (min-width: $tablet) {   
+            display: flex;         
+            width: 226px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 170px;
+        }
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+
+    @media screen and (min-width: $tablet) {
+            width: 226px;
+        }
+    
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+    }
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients-list:hover &,
+    .clients-link:focus & {
+        fill: $color-hover__back;
+    }
+
+        @media screen and (min-width: $tablet) {
+            width: 226px;
+        }
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+    }
+}

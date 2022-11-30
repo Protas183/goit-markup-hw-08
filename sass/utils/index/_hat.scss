@@ -1,0 +1,60 @@
+.section_main_hat {
+    background: #2f303a;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../img/index/img_hat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hat_words {
+    margin: 0 auto;
+    width: 480px;
+    font-weight: $font-weight-hat;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    @media screen and (min-width: $desktop) {
+        width: 800px;
+    }
+}
+
+.button {
+    width: 216px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    background: $btn-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &.button:focus {
+        background-color: $btn-color-hover;
+    }
+}
+
+
+.button_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    font-weight: $font-weight-title;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+}

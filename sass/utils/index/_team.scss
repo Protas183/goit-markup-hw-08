@@ -1,0 +1,182 @@
+.section_team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #f5f4fa;
+
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.team-title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+}
+
+.team {
+    margin: 0 auto;
+    padding-left: 0;
+    
+
+   @media screen and (min-width: $tablet) {
+       display: flex;
+       flex-wrap: wrap;
+   }
+    
+}
+
+.team-list {
+    margin: 0;
+    margin-bottom: 30px;
+    list-style-type: none;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+    
+            &:nth-child(2n) {
+                margin-left: 30px;
+            }
+        }
+    
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+        &:nth-child(3n) {
+                margin-left: 30px;
+            }
+    }
+}
+
+.team-img {
+    width: 450px;
+    height: 460px;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+            height: 374px;
+        }
+    
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+        height: 260px;
+    }
+}
+
+.team-list__person {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+}
+
+.team-list__describe {
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+}
+
+.team-list__name-person {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-weight: $font-weight-name;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+}
+
+.team-list__job-person {
+    margin: 0 auto;
+    font-weight: $font-weight-text;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+}
+
+.social_links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    & .social-link__list:not(:last-child) {
+        margin-right: 10px;
+    }
+
+}
+
+.href_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $color-hover__back;
+    }
+}
+
+.icon_card {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .href_card:hover &,
+    .href_card:focus & {
+        fill: $color-hover__front-link;
+    }
+}
