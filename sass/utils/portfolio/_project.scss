@@ -6,11 +6,16 @@
     justify-content: center;
     list-style-type: none;
     flex-wrap: wrap;
+
+    @media screen and (min-width:$tablet) {
+        justify-content: start;
+    }
 }
 
 .project-list {
     margin: 0;
     margin: 15px;
+    width: 350px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
@@ -75,6 +80,7 @@
     border: 1px solid #eeeeee;
     max-width: 100%;
     max-height: 100%;
+    height: 150px;
 }
 
 .project_name {
