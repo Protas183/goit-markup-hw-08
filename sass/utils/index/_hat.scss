@@ -2,12 +2,52 @@
     background: #2f303a;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../img/index/img_hat.png");
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    //mobile
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../img/index/hat/Header img_480.jpg");
+
+    //mobile retina
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../img/index/hat/Header img_960.jpg");
+    } 
+    
+    @media screen and ( min-width: 481px) {
+        //tablet
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url("../img/index/hat/Header img_768.jpg");
+        
+            //tablet retina
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url("../img/index/hat/Header img_1536.jpg");
+            }
+    }
+
+    @media screen and (min-width: 769px) {
+        //tablet
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../img/index/hat/Img_1600.jpg");
+
+        //tablet retina
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url("../img/index/hat/Img_3200.jpg");
+        }
+    }
 }
 
 .hat_words {

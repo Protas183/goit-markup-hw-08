@@ -62,8 +62,8 @@
 
 .menu-close-icon {
     position: absolute;
-    &:hover,
-    &:focus {
+    .js-close-menu:hover &,
+    .js-close-menu:focus & {
         fill: #2196F3;
         }
 }
