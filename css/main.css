@@ -2,6 +2,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -179,9 +185,23 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-contacts__list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-contacts__list {
+    font-size: 14px;
+  }
+  .menu-contacts__list:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .email_tel_icon {
@@ -445,16 +465,22 @@ img {
   margin: 0 auto;
   width: 480px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .hat_words {
+    width: 800px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hat_words {
     width: 800px;
+    font-size: 44px;
   }
 }
 
@@ -838,8 +864,6 @@ textarea::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -996,6 +1020,11 @@ textarea::placeholder {
 
 .front_text {
   height: 70px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1066,6 +1095,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .team-list {
     width: 270px;
+    margin: 0;
   }
   .team-list:nth-child(3n) {
     margin-left: 30px;
@@ -1292,6 +1322,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .clients-list {
     width: 170px;
+    margin: 0;
   }
 }
 
@@ -1717,6 +1748,9 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .address_li {
     margin: 0;
+  }
+  .address_li :not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 

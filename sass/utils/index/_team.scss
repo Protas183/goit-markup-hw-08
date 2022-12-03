@@ -53,6 +53,7 @@
     
     @media screen and (min-width: $desktop) {
         width: 270px;
+        margin: 0;
         &:nth-child(3n) {
                 margin-left: 30px;
             }

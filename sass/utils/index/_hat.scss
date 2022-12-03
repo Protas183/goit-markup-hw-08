@@ -54,15 +54,20 @@
     margin: 0 auto;
     width: 480px;
     font-weight: $font-weight-hat;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
     
+    @media screen and (min-width: $tablet) {
+            width: 800px;
+        }
+
     @media screen and (min-width: $desktop) {
         width: 800px;
+        font-size: 44px;
     }
 }
 

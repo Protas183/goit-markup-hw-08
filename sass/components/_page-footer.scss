@@ -126,6 +126,10 @@
 
     @media screen and (min-width: $desktop) {
             margin: 0;
+            
+            & :not(:last-child) {
+                margin-bottom: 12px;
+            }
         }
 }
 
