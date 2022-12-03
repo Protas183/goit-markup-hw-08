@@ -69,7 +69,7 @@
 .menu-nav__text {
     position: relative;
     color: #212121;
-    padding-bottom: 33px;
+    padding-bottom: 38px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -87,6 +87,10 @@
         border-radius: 4px;
         background-color: #008cff;
     }
+    
+         @media screen and (min-width: $desktop) {
+             padding-bottom: 33px;
+         }
 }
 
 .menu_contacts {
