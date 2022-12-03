@@ -427,13 +427,19 @@ img {
 
 .section_main_hat {
   background: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/index/hat/Header img_480.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/index/hat/Header img_480.jpg");
+}
+@media screen and (min-width: 1200px) {
+  .section_main_hat {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section_main_hat {
@@ -1054,13 +1060,20 @@ textarea::placeholder {
 
 .team-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team {
@@ -1257,7 +1270,7 @@ textarea::placeholder {
   margin: 0;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1266,6 +1279,8 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .clients-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -1289,6 +1304,9 @@ textarea::placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
