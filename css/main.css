@@ -1559,6 +1559,12 @@ textarea::placeholder {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+@media screen and (min-width: 1200px) {
+  .project-list {
+    margin: 0;
+    margin: 15px;
+  }
+}
 
 .project-thumb {
   position: relative;
