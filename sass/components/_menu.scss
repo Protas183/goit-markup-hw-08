@@ -110,7 +110,7 @@
 .mobile-menu__number {
     margin: 0;
     margin-bottom: 32px;
-    width: 297px;
+    max-width: 297px;
     height: 40px;
     font-family: 'Roboto';
     font-style: normal;
@@ -157,6 +157,11 @@
     letter-spacing: 0.02em;
 
     list-style: none;
+
+    @media screen and (max-width: 395px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .mobile-menu__socials__list {

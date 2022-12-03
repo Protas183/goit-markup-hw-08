@@ -40,10 +40,11 @@
     max-width: 767px;
     margin: 0 auto;
 
+
     @media screen and (min-width: $tablet) {
         width: 231px;
         margin: 0;
-        margin-left: 0;
+        margin-left: 73px;
         display: flex;
         flex-direction: column;    
         }
@@ -187,13 +188,16 @@
 
 .join_social {
     margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
     max-width: 767px;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
         margin: 0;
         margin-top: 5px;
-            width: 738px;
+        margin-right: 73px;
+            width: 665px;
             display: flex;           
             flex-direction: column;
         }
@@ -287,10 +291,12 @@
 
 .subscribe {
     margin: 0;
+    
     max-width: 767px;
     
     @media screen and (min-width: $tablet) {
             margin: 0;
+            margin-top: 60px;
             width: 738px;
         }
 

@@ -56,13 +56,18 @@
 
 .close_button_icon {
     display: flex;
-    width: 16px;
-    height: 16px;
+    width: 11px;
+    height: 11px;
     margin: auto;
 
     .close_button:hover &,
     .close_button:focus & {
         fill: $color-hover__back;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 16px;
     }
 }
 

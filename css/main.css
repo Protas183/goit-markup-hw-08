@@ -46,9 +46,15 @@ img {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .webstudio_header {
@@ -352,7 +358,7 @@ img {
 .mobile-menu__number {
   margin: 0;
   margin-bottom: 32px;
-  width: 297px;
+  max-width: 297px;
   height: 40px;
   font-family: "Roboto";
   font-style: normal;
@@ -399,6 +405,15 @@ img {
   line-height: 22px;
   letter-spacing: 0.02em;
   list-style: none;
+}
+@media screen and (max-width: 395px) {
+  .mobile-menu__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .mobile-menu__socials__list {
@@ -590,12 +605,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 16px;
-  height: 16px;
+  width: 11px;
+  height: 11px;
   margin: auto;
 }
 .close_button:hover .close_button_icon, .close_button:focus .close_button_icon {
   fill: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .close_button_icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .form {
@@ -1399,6 +1420,7 @@ textarea::placeholder {
 
 .button-portfolio {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1409,7 +1431,6 @@ textarea::placeholder {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 40px;
   list-style-type: none;
 }
 .button-portfolio .button-portfolio__list:not(:last-child) {
@@ -1513,10 +1534,12 @@ textarea::placeholder {
 
 .project-list {
   margin: 0;
-  margin: 15px;
   width: 350px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list:not(:last-child) {
+  margin-bottom: 30px;
 }
 .project-list:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1658,7 +1681,7 @@ textarea::placeholder {
   .footer_navigation_main {
     width: 231px;
     margin: 0;
-    margin-left: 0;
+    margin-left: 73px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1826,6 +1849,8 @@ textarea::placeholder {
 
 .join_social {
   margin: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
   max-width: 767px;
 }
 @media screen and (min-width: 768px) {
@@ -1833,7 +1858,8 @@ textarea::placeholder {
     position: absolute;
     margin: 0;
     margin-top: 5px;
-    width: 738px;
+    margin-right: 73px;
+    width: 665px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1960,6 +1986,7 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .subscribe {
     margin: 0;
+    margin-top: 60px;
     width: 738px;
   }
 }
