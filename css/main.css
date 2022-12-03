@@ -556,8 +556,8 @@ img {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  -webkit-transition: 250ms;
-  transition: 250ms;
+  -webkit-transition: 450ms;
+  transition: 450ms;
   z-index: 1;
 }
 

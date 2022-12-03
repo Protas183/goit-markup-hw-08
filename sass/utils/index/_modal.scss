@@ -7,7 +7,7 @@
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     visibility: visible;
-    transition: 250ms;
+    transition: 450ms;
     z-index: 1;
 }
 
@@ -15,6 +15,7 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+
 }
 
 .modal {
@@ -29,10 +30,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 
-    @media screen and (min-width: $tablet) {
-        
-    }
 
     @media screen and (min-width: $desktop) {
         height: 581px;
