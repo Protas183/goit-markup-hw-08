@@ -67,11 +67,11 @@
     color: #ffffff;
     
     @media screen and (min-width: $tablet) {
-            width: 800px;
+            max-width: 360px;
         }
 
     @media screen and (min-width: $desktop) {
-        width: 800px;
+        max-width: 696px;
         font-size: 44px;
     }
 }

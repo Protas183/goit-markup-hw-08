@@ -167,7 +167,8 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    margin-right: auto;
+    margin-right: 50px;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -181,12 +182,10 @@ img {
             flex-direction: row;
     margin: 0;
     margin-left: auto;
-    padding: 0;
   }
 }
 
 .menu-contacts__list {
-  margin-right: 50px;
   padding: 0;
   height: 16px;
   display: -webkit-box;
@@ -500,12 +499,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hat_words {
-    width: 800px;
+    max-width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hat_words {
-    width: 800px;
+    max-width: 696px;
     font-size: 44px;
   }
 }
@@ -899,12 +898,18 @@ textarea::placeholder {
   }
 }
 
+.features-list:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .features-list {
     width: 354px;
   }
   .features-list:nth-child(2n) {
     margin-left: 30px;
+  }
+  .features-list:nth-child(3n) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -981,7 +986,6 @@ textarea::placeholder {
 
 .features_describe {
   margin: 0;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -995,6 +999,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .features_describe {
+    margin: 0;
     width: 270px;
   }
 }
@@ -1113,16 +1118,21 @@ textarea::placeholder {
 
 .team-list {
   margin: 0;
-  margin-bottom: 30px;
   list-style-type: none;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-list:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .team-list {
     width: 354px;
+  }
+  .team-list:nth-child(4) {
+    margin-bottom: 30px;
   }
   .team-list:nth-child(2n) {
     margin-left: 30px;
@@ -1132,9 +1142,13 @@ textarea::placeholder {
   .team-list {
     width: 270px;
     margin: 0;
+    margin-bottom: 0;
   }
   .team-list:nth-child(3n) {
     margin-left: 30px;
+  }
+  .team-list:nth-child(-n+4) {
+    margin-bottom: 0;
   }
 }
 
@@ -1313,10 +1327,19 @@ textarea::placeholder {
   display: flex;
   list-style: none;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.clients :nth-child(2n+2) {
+  margin-left: 30px;
+}
+@media screen and (max-width: 480px) {
+  .clients :nth-child(2n+2) {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients {
@@ -1329,9 +1352,13 @@ textarea::placeholder {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .clients :nth-child(2n+2) {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients {
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1347,6 +1374,14 @@ textarea::placeholder {
   border-radius: 4px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-list:nth-child(n+5) {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 450px) {
+  .clients-list:nth-child(n+5):nth-child(5) {
+    margin-bottom: 30px;
+  }
 }
 .clients-list:hover, .clients-list:focus {
   border: 1px solid #2196f3;
@@ -1704,6 +1739,9 @@ textarea::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1740,7 +1778,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) {
   .webstudio_footer {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
 }
@@ -1782,7 +1820,6 @@ textarea::placeholder {
 
 .address {
   margin: 0 auto;
-  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1811,15 +1848,15 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) {
   .address_li {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .address_li {
     margin: 0;
   }
-  .address_li :not(:last-child) {
-    margin-bottom: 12px;
+  .address_li:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 
@@ -2007,6 +2044,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
+    margin: 0;
     margin-left: 93px;
     width: 570px;
   }

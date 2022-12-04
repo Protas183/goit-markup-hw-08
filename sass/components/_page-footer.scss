@@ -47,6 +47,7 @@
         margin-left: 73px;
         display: flex;
         flex-direction: column;    
+        justify-content: center;
         }
 
     @media screen and (min-width: $desktop) {
@@ -78,7 +79,7 @@
     }
 
     @media screen and (min-width: $tablet) {
-        margin: 0;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
 
@@ -111,7 +112,6 @@
 
 .address {
     margin: 0 auto;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -132,14 +132,14 @@
     margin: 0 auto;
 
     @media screen and (min-width: $tablet) {
-            margin: 0;
+            margin: 0 auto;
         }
 
     @media screen and (min-width: $desktop) {
             margin: 0;
             
-            & :not(:last-child) {
-                margin-bottom: 12px;
+            &:not(:last-child) {
+                margin-bottom: 9px;
             }
         }
 }
@@ -291,18 +291,18 @@
 
 .subscribe {
     margin: 0;
-    
     max-width: 767px;
     
     @media screen and (min-width: $tablet) {
-            margin: 0;
-            margin-top: 60px;
-            width: 738px;
+        margin: 0;
+        margin-top: 60px;
+        width: 738px;
         }
 
     @media screen and (min-width: $desktop) {
-            margin-left: 93px;
-            width: 570px;
+        margin: 0;
+        margin-left: 93px;
+        width: 570px;
         }
 }
 

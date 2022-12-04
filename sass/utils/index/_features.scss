@@ -14,13 +14,19 @@
 }
 
 .features-list {
-
+    &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     @media screen and (min-width: $tablet) {
         width: 354px;
         
         &:nth-child(2n) {
                 margin-left: 30px;
             }
+
+        &:nth-child(3n) {
+            margin-bottom: 0;
+        }
     }
 
     @media screen and (min-width: $desktop){
@@ -81,7 +87,6 @@
 
 .features_describe {
     margin: 0;
-    margin-bottom: 30px;
     font-weight: $font-weight-text;
     font-size: 14px;
     line-height: 1.71;
@@ -90,10 +95,10 @@
 
     @media screen and (min-width: $tablet) {
             width: 354px;
-    
         }
 
         @media screen and (min-width: $desktop) {
+            margin: 0;
             width: 270px;
         }
 }
