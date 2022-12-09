@@ -105,14 +105,13 @@
         display: flex;
         flex-direction: column;
         margin: 0;
-        margin-right: 50px;
-        padding: 0;
         }
 
     @media screen and (min-width: $desktop) {
         display: flex;
         flex-direction: row;
         margin: 0; 
+        margin-right: 50px;
         margin-left: auto;
         
     }

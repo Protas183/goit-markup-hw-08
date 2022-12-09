@@ -128,8 +128,11 @@
 }
 
 .address_li {
-    margin-top: 9px;
     margin: 0 auto;
+    &:not(:last-child){
+        margin-bottom: 9px;
+    }
+    
 
     @media screen and (min-width: $tablet) {
             margin: 0 auto;
