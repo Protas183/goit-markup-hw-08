@@ -13,7 +13,5 @@ function onChecked(event) {
 
 refs.btnCheck.addEventListener('click', onClickBtnForm);
 
-function onClickBtnForm(event) {
-    console.log("Hello!")
-};
+
 
