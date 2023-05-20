@@ -13,11 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/loader.min.css" />
     <link rel="stylesheet" href="css/main.min.css">
     <title>Web Studio</title>
 </head>
 
 <body class="body">
+    <div id="page-preloader" class="preloader">
+        <div class="ld-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="menu">
@@ -26,7 +39,7 @@
                     <ul class="menu_nav">
                         <li class="menu-nav__list"><a class="menu-nav__text current" href="index.html">Студія</a></li>
                         <li class="menu-nav__list"><a class="menu-nav__text" href="portfolio.html">Портфоліо</a></li>
-                        <li class="menu-nav__list"><a class="menu-nav__text" href="">Контакти</a></li>
+                        <li class="menu-nav__list"><a class="menu-nav__text" href="./testLoader.html">Контакти</a></li>
                     </ul>
                 </nav>
                 <ul class="menu_contacts">
@@ -87,8 +100,9 @@
         </div>
     </header>
 
-    <main>
+    <main id="main" class="main">
         <section class="section_main_hat">
+
             <div class="container">
                 <h1 class="hat_words">Ефективні рішення для вашого бізнесу</h1>
                 <button class="button" type="button" data-modal-open><span class="button_text">Замовити
@@ -138,7 +152,7 @@
                                     розсилкою та приймаю</span><a class="text_check_link" href="/">Умови договору</a>
                             </label>
 
-                            <button type="submit" class="btn_form">Відправити</button>
+                            <button type="submit" class="btn_form" disabled>Відправити</button>
                         </form>
                     </div>
                 </div>
@@ -530,6 +544,8 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/userAgree.js"></script>
+    <script src="./js/preloader.js"></script>
 
 </body>
 

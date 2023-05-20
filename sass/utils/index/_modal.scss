@@ -238,11 +238,12 @@ textarea {
     height: 50px;
     color: #ececec;
     background: #2196f3;
+        
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+    
 
     font-family: "Roboto";
     font-style: normal;
@@ -254,9 +255,14 @@ textarea {
     align-items: center;
     letter-spacing: 0.06em;
     color: #ffffff;
-
-    &:hover,
-    &:focus {
-        background: $btn-color-hover;
-    }
 }
+
+.btn_form:disabled {
+    background: #8c97a0;         
+}
+
+.btn_form:enabled:hover {
+    background: #4aa7f2;
+    cursor: pointer;
+}
+

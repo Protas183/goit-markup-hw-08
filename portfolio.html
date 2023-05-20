@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/loader.min.css" />
     <link rel="stylesheet" href="css/main.min.css">
     <title>Web Studio</title>
 </head>
 
 <body class="body">
+
+
     <header class="header">
         <div class="container">
             <div class="menu">
@@ -88,8 +91,20 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="section">
+    <main class="main">
+        <section id="portfolio-project-loader" class="section">
+            <div id="page-preloader" class="preloader">
+                <div class="ld-roller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <div class="container">
                 <ul class="button-portfolio">
                     <li class="button-portfolio__list"><a class="button-portfolio__link" type="button" href="/">Усі</a>
@@ -363,7 +378,7 @@
     </footer>
 
     <script defer src="js/mobile-menu.js"></script>
-
+    <script src="./js/preloader.js"></script>
 </body>
 
 </html>
